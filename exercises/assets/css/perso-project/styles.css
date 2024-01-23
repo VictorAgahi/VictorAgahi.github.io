@@ -56,103 +56,109 @@ body{
 }
 
 /* ---------------------- BUTTON ----------------------- */
-.center
-{
+.center {
     display: flex;
     place-items: center;
     justify-content: center;
     text-align: center;
-
 }
-.outer
-{
+
+.outer {
     position: relative;
-    margin: 0 50px;
+    margin: 0 5vw;
     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
 }
 
-.button
-{
-    height: 70px;
-    width: 220px;
+.button {
+    height: 7vh;
+    width: 22vw;
     border-radius: 50px;
 }
-.circle
-{
-    height: 200px;
-    width: 200px;
+
+.circle {
+    height: 20vh;
+    width: 20vh;
     border-radius: 50%;
 }
-.outer button, .outer span
-{
+
+.outer button,
+.outer span {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.outer button
-{
+
+.outer button {
     background: #111;
     color: #f2f2f2;
     outline: none;
     border: none;
     z-index: 9;
-    font-size: 20px;
+    font-size: 2vw;
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
-
 }
-.button button
-{
-    height: 60px;
-    width: 210px;
+
+.button button {
+    height: 6vh;
+    width: 21vw;
     border-radius: 50px;
 }
-.circle button
-{
-    height: 180px;
-    width: 180px;
+
+.circle button {
+    height: 18vh;
+    width: 18vh;
     border-radius: 50%;
 }
-.outer span
-{
+
+.outer span {
     height: 100%;
     width: 100%;
     background: inherit;
 }
-.button span
-{
+
+.button span {
     border-radius: 50px;
 }
-.circle span
-{
+
+.circle span {
     border-radius: 50%;
 }
-.outer:hover span:nth-child(1)
-{
-    filter: blur(7px);
+
+.outer:hover span:nth-child(1) {
+    filter: blur(0.7vw);
 }
 
-.outer:hover span:nth-child(1)
-{
-    filter: blur(14px);
+.outer:hover span:nth-child(2) {
+    filter: blur(1.4vw);
 }
-.outer:hover
-{
-animation: rotate 1.5s linear infinite;
+
+.outer:hover {
+    animation: rotate 1.5s linear infinite, pulse 1s infinite alternate;
+
 }
+
+
 @keyframes rotate {
-    0%
-    {
+    0% {
         filter: hue-rotate(0deg);
+        transform: scale(1);
     }
-    100%
-    {
-        filter: hue-rotate(360deg) ;
+    100% {
+        filter: hue-rotate(360deg);
+        transform: scale(1.2);
     }
 }
-
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
 /* ----------------------- LOGO ----------------------- */
 
 
@@ -301,3 +307,5 @@ animation: rotate 1.5s linear infinite;
     text-align: center;
 
 }
+
+
