@@ -236,11 +236,21 @@ input, button, textarea, select { font: inherit }
     --trend-800: #1f364d;
     --trend-900: #0e2439;
 
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
 
 }
 
 /* Global font */
-body { font-family: sans-serif }
+body { font-family: sans-serif;
+    margin-left: 100px;
+    margin-right: 100px}
 
 
 /*  ====================== SECTIONS ======================== */
@@ -338,7 +348,10 @@ section p { font-size: 18px }
     color: var(--sky-400);
 }
 .section-selector-4 h2 { color: #fff }
-.section-selector-4 p { color: var(--gray-200) }
+.section-selector-4 p {
+    color: var(--gray-200);
+    font-size: var(--font-monospace);
+}
 
 
 .section-selector-5 { background-color: var(--trend-050) }
@@ -347,6 +360,7 @@ section p { font-size: 18px }
 .section-selector-6 { background-color: var(--purple-200) }
 .section-selector-6 h2 {
     letter-spacing: 3px;
-    color: var(--blue-800)
+    color: var(--blue-800);
+    font-size: var(--font-size-xxxl);
 }
 .section-selector-6 h2 span { color: var(--red-600) }

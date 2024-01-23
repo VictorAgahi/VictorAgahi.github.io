@@ -1,3 +1,13 @@
+root
+{
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
 *
 {
     margin: 0;
@@ -6,7 +16,7 @@
 }
 html
 {
-    background-image: url("../../image/img.jpg");
+    background-image: url("../../image/espace2.jpg");
     background-size: 1920px 1080px;
 
 }
@@ -338,5 +348,42 @@ body{
 {
     text-align: center;
     color:white;
+
+}
+.space
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.main-windows-button
+{
+    box-sizing: inherit;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    font-size: 13pt;
+    width: 7vw;
+    height: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    border: 3px solid #e2e8f0;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+}
+.main-windows-button:hover
+{
+
+    color:white;
+    background-color: #2DD4BF;
+    transition: 0.5s;
 
 }
