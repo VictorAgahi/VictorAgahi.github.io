@@ -1,4 +1,4 @@
-root
+:root
 {
     --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -13,13 +13,18 @@ root
     margin: 0;
     padding : 0;
     box-sizing: border-box;
+    border: none;
+    font-size: var(--font-size-base);
 }
 html
 {
     background-image: url("../../image/espace2.jpg");
     background-size: 1920px 1080px;
-
+    scroll-behavior: smooth;
 }
+
+
+
 section
 {
     background-size: 1920px 1080px;
@@ -27,6 +32,7 @@ section
 html, body
 {
     display: grid;
+    margin: 1px;
     height: 100%;
 
 }
@@ -36,6 +42,7 @@ body{
 }
 /* --  Nav  -- */
 .nav-bar {
+    position: fixed;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -118,7 +125,7 @@ body{
 }
 .second-page
 {
-    background-image: url("../../image/photo.jpg");
+    background-image: url("../../image/galaxy.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +237,7 @@ body{
     content:'';
     position:absolute;
     inset: 6px;
-    background: #042f59;
+    background: black;
     border-radius: 50%;
     z-index: 1;
 }
@@ -350,40 +357,81 @@ body{
     color:white;
 
 }
-.space
-{
+.space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+
+}
+.reveal-p
+{
+    opacity: 0;
+    transform:translateX(-100px);
+}
+.reveal-p-visible
+
+{
+    opacity: 1;
+    transform : translateX(0);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+}
+.space p {
+    color: white;
+    font-size: var(--font-size-xl);
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    letter-spacing: -2px;
+}
+.space p:hover {
+    color: gold;
+    transition: 0.5s;
+    border-bottom: 2px solid green;
+
 }
 
 
-.main-windows-button
+.space a
 {
+    color : white;
+    font-family: Georgia sans-serif;
+    text-decoration: none;
+
+}
+.space a:hover
+{
+    color : black;
+    transition: 0.4s;
+}
+
+.main-windows-button {
     box-sizing: inherit;
     cursor: pointer;
     display: flex;
     color: white;
-    font-size: 13pt;
-    width: 7vw;
+    font-size: var(--font-size-base);
+    width: 9vw;
     height: 3vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 20px;
+
+    padding: 30px;
     transition: all 0.5s;
     border: 3px solid #e2e8f0;
     background-color: black;
     text-align: center;
     align-items: center;
-    vertical-align: center;
+    justify-content: center;
 }
-.main-windows-button:hover
-{
 
-    color:white;
-    background-color: #2DD4BF;
+.main-windows-button:hover {
+    color: black;
+    background-color: gold;
     transition: 0.5s;
-
 }
+
+
