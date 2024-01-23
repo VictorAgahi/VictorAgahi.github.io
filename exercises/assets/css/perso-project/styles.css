@@ -4,7 +4,16 @@
     padding : 0;
     box-sizing: border-box;
 }
+html
+{
+    background-image: url("../../image/img.jpg");
+    background-size: 1920px 1080px;
 
+}
+section
+{
+    background-size: 1900px 1080px;
+}
 html, body
 {
     display: grid;
@@ -14,7 +23,6 @@ html, body
 
 body{
     margin: 3px;
-    background-color: black;
 }
 /* --  Nav  -- */
 .nav-bar {
@@ -22,7 +30,6 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
 
 }
 
@@ -46,9 +53,8 @@ body{
 {
     text-align: center;
     font-size: 40px;
-    color: red;
+    color: white;
     display: block;
-    background-color: black;
 }
 .Title
 {
@@ -57,7 +63,7 @@ body{
 
 /* ---------------------- BUTTON ----------------------- */
 .center {
-    display: flex;
+    display: table-column;
     place-items: center;
     justify-content: center;
     text-align: center;
@@ -65,7 +71,7 @@ body{
 
 .outer {
     position: relative;
-    margin: 0 5vw;
+    margin: 5vw;
     background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
 }
 
@@ -100,7 +106,16 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+.second-page
+{
+    background-image: url("../../image/photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 
+}
 .button button {
     height: 6vh;
     width: 21vw;
@@ -167,11 +182,13 @@ body{
     position: relative;
     width: 400px;
     height: 400px;
+    align-items: center;
     background: rgba(0,0,0,0.5);
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
-
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .logo::before
 {
@@ -309,3 +326,17 @@ body{
 }
 
 
+.grid-container
+{
+    display: grid;
+    margin:0;
+    padding: 10px;
+}
+
+
+.footer-main
+{
+    text-align: center;
+    color:white;
+
+}
