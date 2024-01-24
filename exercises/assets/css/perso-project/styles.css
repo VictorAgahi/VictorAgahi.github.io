@@ -18,7 +18,7 @@
 }
 html
 {
-    background-image: url("../../image/espace2.jpg");
+    background-image: url("../../image/space-background.jpg");
     background-size: 1920px 1080px;
     scroll-behavior: smooth;
 }
@@ -32,6 +32,7 @@ section
 html, body
 {
     display: grid;
+    gap: 40px;
     margin: 1px;
     height: 100%;
 
@@ -75,7 +76,8 @@ body{
 }
 .Title
 {
-    margin: 2px;
+    font-size: var(--font-size-xl);
+    margin-top: 50px
 }
 
 /* ---------------------- BUTTON ----------------------- */
@@ -125,7 +127,7 @@ body{
 }
 .second-page
 {
-    background-image: url("../../image/galaxy.jpg");
+    background-image: url("../../image/cosmos.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -204,8 +206,8 @@ body{
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1;
+    grid-row: 2;
 }
 .logo::before
 {
@@ -369,18 +371,7 @@ body{
     margin: 0;
 
 }
-.reveal-p
-{
-    opacity: 0;
-    transform:translateX(-100px);
-}
-.reveal-p-visible
 
-{
-    opacity: 1;
-    transform : translateX(0);
-    transition: 2s cubic-bezier(.5, 0, 0, 1);
-}
 .space p {
     color: white;
     font-size: var(--font-size-xl);
@@ -418,7 +409,6 @@ body{
     font-size: var(--font-size-base);
     width: 9vw;
     height: 3vw;
-
     padding: 30px;
     transition: all 0.5s;
     border: 3px solid #e2e8f0;
@@ -435,3 +425,54 @@ body{
 }
 
 
+.button1
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+.text-1
+{
+    margin-left : 10vw;
+}
+.text-1 h2
+{
+    margin-top: 7vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    color: white;
+    width: 18vw;
+    height: 4vw;
+    border-bottom: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-lg);
+}
+.text-1-color-p {
+    color: white;
+    padding: 5px 5px;
+    font-size: var(--font-size-base);
+}
+/* JS*/
+.reveal-p
+{
+    opacity: 0;
+    transform:translateX(-100px);
+}
+.reveal-p-visible
+
+{
+    opacity: 1;
+    transform : translateX(0);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+}
+.reveal-button1
+{
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.reveal-button1-visible
+{
+    opacity: 1;
+    transform : translateX(0);
+    transition: 3s cubic-bezier(.5, 0, 0, 1);
+}
