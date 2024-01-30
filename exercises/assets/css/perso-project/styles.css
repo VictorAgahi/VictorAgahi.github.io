@@ -400,29 +400,30 @@ body{
     color : black;
     transition: 0.4s;
 }
-
 .main-windows-button {
-    box-sizing: inherit;
+    box-sizing: border-box;
     cursor: pointer;
     display: flex;
-    color: white;
-    font-size: var(--font-size-base);
     width: 9vw;
-    height: 3vw;
-    padding: 30px;
+    margin-bottom: 3vw;
+    font-size: var(--font-size-xxl);
+    background: -webkit-linear-gradient(#ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height:5vw;
+    padding: 10px;
     transition: all 0.5s;
-    border: 3px solid #e2e8f0;
-    background-color: black;
+    border: 3px solid #ffffff;
     text-align: center;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+
 }
 
-.main-windows-button:hover {
-    color: black;
-    background-color: gold;
-    transition: 0.5s;
-}
+
+
 
 
 .button1
