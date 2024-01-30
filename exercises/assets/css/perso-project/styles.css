@@ -477,3 +477,10 @@ body{
     transform : translateX(0);
     transition: 3s cubic-bezier(.5, 0, 0, 1);
 }
+
+.color-menu
+{
+    color :white;
+    text-align: center;
+    font-size: 70px;
+}
