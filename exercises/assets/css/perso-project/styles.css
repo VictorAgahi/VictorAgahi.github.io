@@ -570,3 +570,34 @@ html, body
     text-align: center;
     font-size: 70px;
 }
+.blur {
+    filter: blur(10px);
+}
+.background-photo
+{
+    background-image: url("../../image/juskteez-vu-mwhklqGVzck-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+.background-photo h2
+{
+    color:white;
+}
+.theme-footer
+{
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+.theme-footer h2
+{
+    color : black;
+}
