@@ -563,6 +563,29 @@ html, body
     transform : translateX(0);
     transition: 3s cubic-bezier(.5, 0, 0, 1);
 }
+.reveal-button2
+{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.reveal-button2-visible
+{
+    opacity: 1;
+    transform : translateX(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+.reveal-button3-visible
+{
+    opacity: 1;
+    transform : translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+.reveal-button3
+{
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
 
 .color-menu
 {
