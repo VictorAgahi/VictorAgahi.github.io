@@ -18,15 +18,15 @@
 }
 html
 {
-    background-size: 1920px 1080px;
     scroll-behavior: smooth;
 }
 .bg {
     background-image: url("../../image/cosmos.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -3;
@@ -122,15 +122,10 @@ section
 html, body
 {
     display: grid;
-    gap: 40px;
-    margin: 1px;
     height: 100%;
 
 }
 
-body{
-    margin: 3px;
-}
 /* --  Nav  -- */
 .nav-bar {
     position: fixed;
@@ -219,10 +214,11 @@ body{
 {
     background-image: url("../../image/space-background.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
 
 }
 .button button {
@@ -457,7 +453,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 99vh;
     margin: 0;
 
 }
