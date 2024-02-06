@@ -12,23 +12,11 @@ $(function() {
             $(this).height(h);
         });
     }
-    //
-    const observer2 = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            console.log(entry);
-            if (entry.isIntersecting) {
-                entry.target.classList.add("reveal-button1-visible")
-            }
-            else
-            {
-                entry.target.classList.remove("reveal-button1-visible")
-            }
-        });
-    });
+    // Animation button
 
-    const hidden_Page2 = document.querySelectorAll('.reveal-button1');
-    hidden_Page2.forEach((el)=>observer2.observe(el));
-
+    observeVisibility("about-title-animation", "about-title-animation-reveal");
+    observeVisibility("about-text-animation", "about-text-animation-reveal");
+    observeVisibility("about-img-animation", "about-img-animation-reveal");
 
     // Sticky Nav on Mobile
     if (isMobile) {
@@ -44,6 +32,10 @@ $(function() {
         var pos = $(window).scrollTop();
         var pos2 = pos + 50;
         var scrollBottom = pos + $(window).height();
+
+
+
+
         if (!isMobile) {
             if (pos >= navPos + $('nav.overridden-nav').height() && lastPos < pos) {
                 console.log("FIX");
@@ -57,8 +49,19 @@ $(function() {
         }
 
         // Link Highlighting
+        if (pos2 > $('#home').offset().top) {
+            highlightLink('home');
+        }
+        if (pos2 > $('#about').offset().top) {
+            highlightLink('about');
+        }
 
-
+        if (
+            pos2 > $('#contact').offset().top ||
+            pos + $(window).height() === $(document).height()
+        ) {
+            highlightLink('contact');
+        }
 
     });
 
@@ -68,6 +71,19 @@ $(function() {
             .find('[dest="' + anchor + '"]')
             .addClass('active');
     }
+    function observeVisibility(classNameToObserve, classNameToAddOrRemove) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(classNameToAddOrRemove);
+                } else {
+                    entry.target.classList.remove(classNameToAddOrRemove);
+                }
+            });
+        });
 
-
+        const elements = document.querySelectorAll('.' + classNameToObserve);
+        elements.forEach((el) => observer.observe(el));
+    }
 });

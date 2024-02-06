@@ -226,6 +226,7 @@ nav {
     width: 100%;
     z-index: 99;
 }
+
 nav.overridden-nav
 {
     /*display: none;*/
@@ -280,6 +281,7 @@ nav .mdi-menu {
 nav .active {
     color: #ffb707;
 }
+
 @media screen and (min-width: 600px) {
     body {
         font-size: 12pt;
@@ -356,20 +358,62 @@ section {
     position: relative;
     height: 100%;
 }
-.section-selector-1
+
+/* SECOND PAGE */
+.section-selector-1,.section-selector-2
 {
     padding-top: 15vh;
     padding-bottom: 10vh;
+
 }
 
-.reveal-button1
+.section-selector-1 .heading-underline
+{
+    color: #24a2a2;
+}
+.section-selector-2
+{
+    background-color: #b4b4b4;
+    justify-content: center;
+
+}
+
+/* SECOND PAGE OFF */
+
+/* Animation */
+
+.about-text-animation
 {
     opacity: 0;
-    transform: translateZ(-100px);
+    transform: translateX(-100%);
+    transition: opacity 1s ease, transform 1s ease;
 }
-.reveal-button1-visible
+.about-text-animation-reveal
 {
     opacity: 1;
-    transform : translateZ(0);
-    transition: 3s cubic-bezier(.5, 0, 0, 1);
+    transform: translateX(0%);
 }
+.about-title-animation
+{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.about-title-animation-reveal
+{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.about-img-animation
+{
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.about-img-animation-reveal
+{
+    opacity: 1;
+    transform: translateY(0%);
+}
+/*
