@@ -11,58 +11,73 @@ input, button, textarea, select { font: inherit }
 
 /* ================= ENDS ================ */
 
+/* ==== Web page width ==== */
+
 /* Desktops */
-@media (min-width: 768px) { body { padding: 4% 20% } }
+@media (min-width:768px) { body { padding: 4% 18% } }
+
 
 /* Mobiles */
-@media (max-width: 767px) { body { padding: 12% 8% } }
+@media (max-width:767px) { body { padding: 12% 8% } }
 
 
-/* Web page */
-body {
-    background-color: rgb(247,233,225)
-}
+/* ==== Headings ==== */
 
-/* Main heading */
+.bono h3,
+.bono p,
+.adam h3,
+.adam p { color: #fff }
+
+.edge h3,
+.edge p,
+.larry h3,
+.larry p { color: #000 }
+
 h1 {
-    font-family: 'Domine',serif;
-    font-weight: bold;
-    font-size: 54px;
-    letter-spacing: -1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
     text-align: center;
-    margin-bottom: 32px;
-    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 64px;
 }
 
-
-
-/* Small headings */
-h2 {
-    font-family: 'PT Sans',sans-serif;
-    font-weight: bold;
-    color: #5b569a;
-    font-size: 32px;
-    text-align:center;
-    margin-bottom: 42px;
-    line-height: 1.2;
-}
-
-/* Smaller headings */
 h3 {
-    font-family: 'Domine',serif;
-    font-weight: bold;
-    font-size: 48px;
-    color: #5b569a;
-    margin-top: 32px;
-    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-bottom: 2px;
 }
 
-/* Text paragraphs */
+/* Paragraphs of text */
 p {
-    font-family: 'PT Sans',sans-serif;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 20px;
-}e
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #696969;
+    line-height: 1.7
+}
+.bono {
+    background-color: #4081ec;
+    padding: 12px;
+    margin-bottom: 40px;
+    width: 220px
+}
+
+.edge {
+    background-color: #ffbb33;
+    padding: 12px;
+    margin-bottom: 40px;
+    width: 220px
+}
+
+.adam {
+    background-color: #f73345;
+    padding: 12px;
+    margin-bottom: 40px;
+    width: 220px
+}
+
+.larry {
+    background-color: #e0e0e0;
+    padding: 12px;
+    margin-bottom: 40px;
+    width: 220px
+}
