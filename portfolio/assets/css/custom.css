@@ -1,0 +1,41 @@
+
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #010039 }
+
+ul.links-wrapper.active { background-color: #010039 }
+
+
+header.theme-dark   { background-color: #010039 }
+
+header.theme-dark  h1 { color: var(--sky-400); }
+
+section.theme-dark   { background-color: #010039 }
+
+footer.theme-dark   { background-color: #010039 }
+
+
+
+header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+header.theme-light h1 { color: var(--black-000) }
+header.theme-light { background-color: #010039}
+
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { background-color: var(--orange-700) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):focus,
+header.theme-dark .container-btn a.btn:nth-child(2):hover,
+header.theme-dark .container-btn a.btn:nth-child(2):active { background-color: var(--orange-700) }
+
+header.theme-dark .container-btn a.btn:nth-child(2):link,
+header.theme-dark .container-btn a.btn:nth-child(2):visited { border-color: var(--orange-700) }
+
+header.theme-dark .container-btn a.btn:nth-child(1):link,
+header.theme-dark .container-btn a.btn:nth-child(1):visited { border-color: var(--orange-700) } 
+
+header.theme-dark .badge { 
+    background-color: var(--orange-700) ;
+    color: #fff}
+
+    
+
+

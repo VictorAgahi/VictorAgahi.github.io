@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="exercises/assets/css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Welcome to Victor Agahi website that show some of my digital creations">
-    <!-- Google tag (gtag.js) -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Agahi">
+    <title> PORTFOLIO | VICTOR AGAHI
+    </title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXBXZLJY8V"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,21 +13,387 @@
         gtag('js', new Date());
         gtag('config', 'G-CXBXZLJY8V');
     </script>
-    <title>Victor Agahi | Web Designer</title>
+    <link
+            href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-M8X6gQF+1l6w34tuqK5v8DwxbbUeSV6z+d7GwLP6xLlgz5Zck4/A8pB5rBJwY9lHc9HJ90d3zvU2rPu1zKqPUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
 
-<ul class = "nav-bar">
-    <li class="item-bar"><a class = "text-bar" href="exercises/page-0.html">ALL PAGES</a></li>
 
-</ul>
-<div class="bg"></div>
-<div class="star-field">
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div></div>
-<h2 class="text-website">VICTOR WEBSITE</h2>
+<section id="home" class="module-image js-height-full">
 
-<h1 class="color-menu"> clique on ALL PAGES</h1>
+    <div class="intro">
+        <div class="hello">Hi,</div>
+        <h1 id="pres"></h1>
+        <div class="who-creates">And an Epita Student</div>
+    </div>
+    <canvas class="background"></canvas>
+
+    <a href="#presentation">
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+    </a>
+
+</section>
+<header class="header">
+    <nav class="navbar navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                    <span class="sr-only">MENU</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">AGAHI</a>
+            </div>
+            <div class="collapse navbar-collapse" id="custom-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#presentation">Presentation</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#about">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="presentation" class="module module-gray text-center">
+    <div class="container">
+
+        <div class="module-header">
+            <h2 class="module-title">Presentation
+                <span>WHO I AM ?</span>
+            </h2>
+            <div class="module-line"></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-10 col-sm-offset-1">
+
+                <p class="lead">
+                    <strong>
+                        <i>Passionate Developer</i>
+                    </strong>
+                     you know
+                    <br>
+                    currently
+                    <i>
+                        <strong>Dorset Student</strong>
+                    </i>
+                    <br>
+                    I work efficiently thanks to the Dorset Teacher
+                    <br>
+                    I also develop in
+                    <strong>Ocaml</strong>, allowing me to do the afit
+                    <br>
+                    <br>
+                    I've done quite a few cool projects like
+                    <a href="#portfolio">check it out.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="module">
+    <div class="container">
+        <div class="row">
+
+            <div class="module-header">
+                <h2 class="module-title">
+                    My work
+                    <span>Portfolio</span>
+                </h2>
+                <div class="module-line"></div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-sm-12">
+
+                <ul id="filter">
+                    <li class="active" data-group="all">Every</li>
+                    <li data-group="website">Website</li>
+                    <li data-group="games">Games</li>
+                    <li data-group="Ai-Project">AI Project</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <ul class="list-items-container">
+
+                <li class="list-item" data-groups="all website">
+                    <figure>
+                        <a href="portfolio/fashion/index.html">
+                        <img src="assets/images/project-fashion.jpg">
+                        </a>
+                    </figure>
+                </li>
+
+                <li class="list-item" data-groups="all website">
+                    <figure>
+                        <a href="portfolio/smoothies/index.html">
+                        <img src="assets/images/project-smoothie.jpg">
+                        </a>
+                    </figure>
+                </li>
+                <li class="list-item" data-groups="all website">
+                    <figure>
+                        <a href="portfolio/cryptoWallet/index.html">
+                        <img src="assets/images/project-crypto-wallet.jpg">
+                        </a>
+                    </figure>
+                </li>
+                <li class="list-item" data-groups="all Ai-Project">
+                    <figure>
+                        <a href="#">
+                        <img src="assets/images/MGJV.png">
+                        </a>
+                    </figure>
+                </li>
+                <li class="list-item" data-groups="all website">
+                    <figure>
+                        <a href="portfolio/project-hero/index-1.html">
+                        <img src="assets/images/project-hero.png">
+                            </a>
+                    </figure>
+                </li>
+                <li class="list-item" data-groups="all website">
+                    <figure>
+                        <a href="portfolio/store/index.html">
+                        <img src="assets/images/store.png">
+                        </a>
+                    </figure>
+                </li>
+
+                <li class="list-item" data-groups="all games">
+                    <figure>
+                        <a href="#">
+                        <img src="assets/images/AlongNight.png">
+                        </a>
+                    </figure>
+                </li>
+
+                <li class="list-item" data-groups="all Ai-Project">
+                    <figure>
+                        <img src="assets/images/SelfDrivingGame.png">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="about">
+
+    <div class="row position-relative margin-0">
+
+
+        <div class="col-xs-12 col-md-8 col-md-offset-4 side-image-text">
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div class="module-header wow fadeInUp">
+                        <h2 class="module-title">
+                            Mastering some Language
+                            <span>SKILLS</span>
+                        </h2>
+                        <div class="module-line"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fa fa-html5 fa-2x"></i>
+										HTML<i class="val">86%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar ">
+                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fa fa-css3 fa-2x"></i>
+                                        CSS/SCSS
+										<i class="val">84%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fab fa-php fa-2x"></i>
+										&nbsp;  PYTHON<i class="val">82%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar">
+                        <div class="progress-bar progress-bar-blue2" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fab fa-php fa-2x"></i>
+										&nbsp;  JAVASCRIPT/REACT<i class="val">77%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar">
+                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fas fa-database fa-2x"></i>
+										&nbsp; C/C#<i class="val">75%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar">
+                        <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fab fa-java fa-2x"></i>
+										&nbsp; KOTLIN<i class="val">67%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar">
+                        <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fab fa-stripe-s fa-2x"></i>
+										&nbsp; ASSEMBLY<i class="val">63%</i>
+									</span>
+                        </div>
+                    </div>
+
+                    <div class="progress skill-bar">
+                        <div class="progress-bar progress-bar-beige" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+									<span class="skill">
+										<i class="fab fa-js fa-2x"></i>
+										&nbsp; Rust<i class="val">55%</i>
+									</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="module module-gray text-center">
+    <div class="container">
+
+        <div class="module-header">
+            <h2 class="module-title">Let's start a Project together
+                <span>Contact</span>
+            </h2>
+            <div class="module-line"></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+
+                <form id="contact-form" action="#">
+                    <div class="ajax-hidden">
+                        <div class="form-group wow fadeInUp">
+                            <label class="sr-only" for="c_name">Name</label>
+                            <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name" required>
+                        </div>
+
+                        <div class="form-group wow fadeInUp" data-wow-delay=".1s">
+                            <label class="sr-only" for="c_email">E-mail Adress</label>
+                            <input type="email" id="c_email" class="form-control" name="c_email" placeholder="Email adress" required>
+                        </div>
+
+                        <div class="form-group wow fadeInUp" data-wow-delay=".2s">
+                            <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message" required></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-button" class="btn btn-block btn-custom wow fadeInUp" data-wow-delay=".3s">Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/victor-agahi-49b97b292/">
+                            <img class="wow footer-img fadeInUp" src="assets/images/linkedin.png" alt="Linkedin"></img>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/VictorAgahi"  data-wow-delay=".1s">
+                            <img class="wow footer-img fadeInUp" src="assets/images/github.png" alt="Linkedin"></img>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    © 2024 Victor Agahi, All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<div class="scroll-up">
+    <a id="scroll-up">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+<!-- Javascript files -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+<script src="assets/js/imagesloaded.pkgd.js"></script>
+<script src="assets/js/jquery.shuffle.min.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+<script src="assets/js/particles.app.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/custom-shuffle-init.js"></script>
+
 </body>
+
+</html>
