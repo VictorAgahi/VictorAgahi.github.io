@@ -65,7 +65,7 @@
     });
 
     new TypeIt('#pres', {
-        strings: ["My name is Victor, I'm a Dorset Engineerr"],
+        strings: ["My name is Victor, and I'm a Computer Science student"],
         speed: 50,
         loop:true,
         loopDelay:10000,
